@@ -17,7 +17,7 @@ class QuizController extends Controller
     {
         $checkauth = auth()->user();
         if (!$checkauth) {
-            return response()->json(['message' => 'Unauthorized'], 401);
+            return response()->json(['message' => 'Unauthorized!'], 401);
         }
         $query = Quiz::query();
 
